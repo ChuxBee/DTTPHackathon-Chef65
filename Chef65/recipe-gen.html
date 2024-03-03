@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Generator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.css"
+        integrity="sha512-kT0v1BxcibEO2Yc+6Z3W1gNsN+2cZ/U6uITqHhIJl8SAvt9vpO8llugdCPXA7cCnp8G1xbuSqHNMRaR3Zlz9yA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.min.css"
+        integrity="sha512-k+xZuzf4IaGQK9sSDjaNyrfwgxBfoF++7u6Q0ZVUs2rDczx9doNZkYXyyQbnJQcMR4o+IjvAcIj69hHxiOZEig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Recipe Generator</h1>
+        <div class="recipe_input">
+            <label for="food_class">Enter Recipe</label>
+            <input type="text" id="food_class"
+                placeholder="Pasta, Porridge, Rice, Beans, Peppers, Omelette, etc...">
+        </div>
+        <button class="generate_btn" onclick="handleGenerateRecipe()">
+            <span class="generating">Generating...</span>
+            <span class="generate_text">Generate My Recipe</span>
+        </button>
+        <div id="recipe"></div>
+    </div>
+
+
+    <script src="./js/toastify.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
